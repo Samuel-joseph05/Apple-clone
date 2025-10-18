@@ -1,20 +1,15 @@
-// import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import CaroselSlider from "../CaroselSlider";
 function Home() {
-
-  const navigate=useNavigate();
-  const handleSearch=()=>{
+  const navigate = useNavigate();
+  const handleSearch = () => {
     navigate("/searchbar");
-  }
- 
-return (
+  };
+
+  return (
     <>
-     
       <div className="w-full ">
-        <div
-         
-          className="flex items-center  bg-gray-100 p-10  text-black "
-        >
+        <div className="flex items-center  bg-gray-100 p-10  text-black ">
           <p>
             <img
               src="/Apple_logo_black.svg"
@@ -54,7 +49,7 @@ return (
               <a href="Support">Support</a>
             </p>
 
-            <p onClick={handleSearch}className="cursor-pointer">
+            <p onClick={handleSearch} className="cursor-pointer">
               <img
                 src="/search_icon.svg"
                 alt="search icon"
@@ -69,7 +64,7 @@ return (
                 className="w-20 h-17 ml-10 mr-10 "
               />
             </p>
-              <p>
+            <p>
               <img
                 src="/menu_bar.svg"
                 alt="apple icon"
@@ -80,11 +75,13 @@ return (
         </div>
         <div className="p-15">
           <p className="flex justify-center text-5xl font-light  ">
-                Get up to 6 months of No Cost EMIfootnote§ plus up to ₹10000.00
-            instant cashbackfootnote§§ on selected products with eligible cards.<br></br><p className="text-blue-700  hover:underline ">
+            Celebrate with up to ₹10000.00 instant cashback on your favourite
+            products with eligible cards. footnote§§ Plus up to 12 months of No
+            Cost EMI.footnote§
+            <br></br>
+            <p className="text-blue-700  hover:underline ">
               <a href="">See offers </a>
             </p>{" "}
-        
             <span>
               <img
                 src="/add_circle.svg"
@@ -93,7 +90,6 @@ return (
               ></img>
             </span>
           </p>
-              
         </div>
         <div className="bg-gray-100">
           {" "}
@@ -105,7 +101,10 @@ return (
                 <br /> products you love.
               </span>
             </h1>
-            <div className=" text-5xl mr-16 ">
+            <div
+              className=" text-5xl mr-16 
+"
+            >
               <p>Need shopping help?</p>
               <span className="text-blue-700 hover:underline  font-[350] flex row-auto">
                 <a href="">
@@ -143,6 +142,7 @@ return (
           </div>
         </div>
       </div>
+      <CaroselSlider />
     </>
   );
 }
