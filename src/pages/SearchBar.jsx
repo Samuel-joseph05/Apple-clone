@@ -1,8 +1,7 @@
-import { delay } from "framer-motion";
+
 
 function SearchBar() {
   const handleClose = () => {
-    delay(2)
     window.history.back();
   };
   return (
@@ -28,12 +27,21 @@ function SearchBar() {
       <div>
         <h4 className="text-[#6e6e73] text-6xl mt-30  ml-40">Quick Links</h4>
         <ul className="text-5xl p-10 ml-40">
-          <li className="p-3 mb-5  font-medium"><a href="find a store">
-Find a Store</a></li>
-          <li className="p-3 mb-5 font-medium"><a href="accessories">Accessories</a></li>
-          <li className="p-3 mb-5 font-medium"><a href="AirPods">AirPods</a></li>
-          <li className="p-3 mb-5 font-medium"><a href="Apple Intelligense">Apple Intelligense</a></li>
-          <li className="p-3 mb-5 font-medium"><a href="Apple Trade In">Apple Trade In</a> </li>
+          <li className="p-3 mb-5  font-medium">
+            <a href="find a store">Find a Store</a>
+          </li>
+          <li className="p-3 mb-5 font-medium">
+            <a href="accessories">Accessories</a>
+          </li>
+          <li className="p-3 mb-5 font-medium">
+            <a href="AirPods">AirPods</a>
+          </li>
+          <li className="p-3 mb-5 font-medium">
+            <a href="Apple Intelligense">Apple Intelligense</a>
+          </li>
+          <li className="p-3 mb-5 font-medium">
+            <a href="Apple Trade In">Apple Trade In</a>{" "}
+          </li>
         </ul>
       </div>
     </div>
