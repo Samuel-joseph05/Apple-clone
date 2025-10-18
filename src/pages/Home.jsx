@@ -5,7 +5,9 @@ function Home() {
   const handleSearch = () => {
     navigate("/searchbar");
   };
-
+  const handleMenuBar = () => {
+    navigate("/menubar");
+  };
   return (
     <>
       <div className="w-full ">
@@ -14,38 +16,38 @@ function Home() {
             <img
               src="/Apple_logo_black.svg"
               alt="apple icon"
-              className="w-10 h-13 ml-2"
+              className="w-10 h-13 ml-2 lg:w-5 lg:h-7"
             />
           </p>
           <div className="flex items-center text-[#3f3f3f] ">
-            <p className="ml-10 hidden lg:text-5x1">
+            <p className="ml-10 hidden lg:text-3x1 lg:block">
               <a href="Store">Store</a>
             </p>
-            <p className="ml-10 hidden lg:text-lg">
+            <p className="ml-10 hidden lg:text-lg lg:block">
               <a href="Mac">Mac</a>
             </p>
-            <p className="ml-10 hidden lg:text-xs">
+            <p className="ml-10 hidden lg:text-xs lg:block">
               <a href="ipad">ipad</a>
             </p>
-            <p className="ml-10 hidden lg:text-xs">
+            <p className="ml-10 hidden lg:text-xs lg:block">
               <a href="iphone">iphone</a>
             </p>
-            <p className="ml-10 hidden lg:text-xs">
+            <p className="ml-10 hidden lg:text-xs lg:block">
               <a href="Watch">Watch</a>
             </p>
-            <p className="ml-10 hidden lg:text-xs">
+            <p className="ml-10 hidden lg:text-xs lg:block">
               <a href="Airpods">Airpods</a>
             </p>
-            <p className="ml-10 hidden lg:text-xs">
+            <p className="ml-10 hidden lg:text-xs lg:block">
               <a href="TV&home">TV&home</a>
             </p>
-            <p className="ml-10 hidden lg:text-xs">
+            <p className="ml-10 hidden lg:text-xs lg:block">
               <a href="Entertainment">Entertainment</a>
             </p>
-            <p className="ml-10 hidden lg:text-xs">
+            <p className="ml-10 hidden lg:text-xs lg:block">
               <a href="Acessories">Acessories</a>
             </p>
-            <p className="ml-10 hidden lg:text-xs">
+            <p className="ml-10 hidden lg:text-xs lg:block">
               <a href="Support">Support</a>
             </p>
 
@@ -53,18 +55,18 @@ function Home() {
               <img
                 src="/search_icon.svg"
                 alt="search icon"
-                className="w-20 h-17 ml-120 mr-10"
+                className="w-20 h-17 ml-120 mr-10 lg:w-5"
               />
             </p>
 
-            <p>
+            <p >
               <img
                 src="/shopping_bag.svg"
                 alt="shopping_bag icon"
-                className="w-20 h-17 ml-10 mr-10 "
+                className="w-20 h-17 ml-10 mr-10 lg:w-5 "
               />
             </p>
-            <p>
+            <p onClick={handleMenuBar}>
               <img
                 src="/menu_bar.svg"
                 alt="apple icon"
@@ -73,8 +75,8 @@ function Home() {
             </p>
           </div>
         </div>
-        <div className="p-15">
-          <p className="flex justify-center text-5xl font-light  ">
+        <div className="p-15 lg:4">
+          <p className="flex justify-center text-5xl font-light lg:text-sm  ">
             Celebrate with up to ₹10000.00 instant cashback on your favourite
             products with eligible cards. footnote§§ Plus up to 12 months of No
             Cost EMI.footnote§
